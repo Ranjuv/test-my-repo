@@ -2,15 +2,50 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <script type="text/javascript" src="javascript.js"></script>  
+  <style type="text/css">
+  .myform {
+      background: #f1f1f2;
+      padding: 20px;
+      width: 234px;
+  }
+
+  </style>
 </head>
 <body>
- <div>Hiii</div>
- <script type="text/javascript">
-   var person {
-    firstName:"ranjuv";
-   }
 
-   Document.write(person.firstName);
- </script>
+
+<form>
+  name : <input type="text" name="name" id="myname" /> <br /><br />
+  address : <input type="text" name="address" id="my_address" /><br /><br />
+  <input type="button" name="submit" value="submit" onclick="submitbtn()" />
+
+  <br /><br />
+    <select id="select_value" onchange="selectvalue()">
+      <option value="js">javascript</option>
+      <option value="html">html</option>
+      <option value="css">css</option>
+      <option value="php">php</option>
+      <option value="css3">css3</option>
+    </select>
+  <br /><br />
+
+  <input type="checkbox" class="checks" value="Javascript" />Javascript <br />
+  <input type="checkbox" class="checks" value="Css" /> Css<br />
+  <input type="checkbox" class="checks" value="Html" /> Html<br /><br />
+  <a href="#" onclick="getvalue(); ">asdf</a>
+
+</form>
+
+<div class="myform">
+  <form action="thanku.html" method="post">
+    name :<br /> <input type="text" name="name" id="name" /> <br /><br />
+    address : <br /><input type="text" name="address" id="address" /><br /><br />
+    message :<br /> <textarea ype="text" name="message" id="message" rows="5"></textarea><br /><br />
+    <input type="submit" name="submit" value="submit" onclick="submitform()" />
+  </form>
+</div>
+
+
 </body>
 </html>

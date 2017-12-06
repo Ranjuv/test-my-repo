@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: normal 12px arial; 
+}
+
+.main_wrap {
+  background: #ab1717;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+  font-size:14px;
+}
+
+input {
+  border: 1px solid #d1e6ec;
+  padding: 5px 11px;
+  border-radius: 4px;
+}
+
+.field {
+  padding: 0 0 20px;
+}
+ 
